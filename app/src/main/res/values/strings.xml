@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">SnapMark</string>
+    <!-- Watermark format: Chinese text is required by product specification -->
+    <string name="watermark_format">来源：%1$s | %2$s</string>
+</resources>
