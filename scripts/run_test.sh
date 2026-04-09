@@ -9,6 +9,13 @@
 
 set -e
 
+# Android Gradle plugin requires Java 17
+if [ -z "$JAVA_HOME" ]; then
+    echo "ERROR: JAVA_HOME is not set. Please set it to a JDK 17 installation." >&2
+    exit 1
+fi
+export JAVA_HOME
+
 info() { echo "[INFO] $*"; }
 
 run_lints() {
